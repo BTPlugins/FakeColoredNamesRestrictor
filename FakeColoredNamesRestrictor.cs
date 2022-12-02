@@ -30,7 +30,7 @@ namespace FakeColoredNamesRestrictor
 
         private void onPlayerConnected(UnturnedPlayer player)
         {
-            if (Instance.Configuration.Instance.Enabled)
+            if (Instance.Configuration.Instance.Enabled && player.CharacterName.Contains("<#"))
             {
                 if (Instance.Configuration.Instance.DebugMode)
                 {
